@@ -1,0 +1,16 @@
+html, body {
+  width: 250px;
+}
+
+body {
+  padding:0.5rem;
+}
+
+body > * {
+  width:100%;
+  margin-bottom:1rem;
+}
+
+#year_type {
+  width:235px;
+}

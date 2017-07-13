@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="year.css"/>
+    </head>
+    <body>
+        <select id="year_unit" name="year_unit">
+            <option value="mingo">民國換算為西元</option>
+            <option value="grego">西元換算為民國</option>
+        </select>
+        <input id="year_type" type="number" />
+        <input id="year_calc" type="button" value="換算年份！" />
+        <p>
+            你所輸入的年份：<span id="year_inputed"></span> <br />
+            換算出來的年份：<span id="year_result"></span>
+        </p>
+        <script src="year.js"></script>
+    </body>
+</html>
