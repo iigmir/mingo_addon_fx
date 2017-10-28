@@ -1,15 +1,19 @@
 {
-  "name": "Mingo year conventor",
-  "manifest_version": 2,
-  "version": "1.0",
-  "description": "Change Mingo/Gregorian year to Gregorian/Mingo year by select bar.",
-  "icons": {
-    "48": "icons/kmt.svg"
-  },
-  "permissions": ["activeTab"],
-  "browser_action": {
-    "default_icon": "icons/icon.png",
-    "default_title": "Mingo",
-    "default_popup": "popup/year.html"
-  }
+    "name": "Mingo year conventor",
+    "manifest_version": 2,
+    "version": "2.0",
+    "description": "Change Mingo/Gregorian year to Gregorian/Mingo year by select bar.",
+    "icons": {
+        "48": "icons/kmt.svg"
+    },
+    "permissions": ["activeTab"],
+    "browser_action": {
+        "default_icon": "icons/icon.png",
+        "default_title": "Mingo",
+        "default_popup": "popup/year.html"
+    },
+    "options_ui": {
+        "page": "option/index.html",
+        "browser_style": true
+    }
 }

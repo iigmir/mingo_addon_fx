@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p id="test">目前設定：</p>
+        <label for="default_format">預設轉換格式</label>
+        <select id="default_format" name="default_format">
+            <option value="m2g">民國至西元</option>
+            <option value="g2m">西元至民國</option>
+        </select>
+        
+        <script src="option.js"> </script>
+        <script>
+// https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Debugging
+// https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Internationalization
+// Runnings
+/*
+function i18n_change(){}
+
+function restoreOptions()
+{
+    var gettingItem = browser.storage.sync.get('locale');
+    gettingItem.then((res) => {
+        document.querySelector("#locale").value = res.locale || zh_tw;
+    });
+}
+
+document.addEventListener('DOMContentLoaded', restoreOptions);
+document.querySelector("#locale").addEventListener( "change" , function(e)
+{
+    var tmp_val = document.querySelector("#locale").value;
+    var set_locale;
+    console.log( tmp_val );
+    
+    debugger;
+    switch( tmp_val )
+    {
+        case "zh-tw" : set_locale = zh_tw; break;
+        case "zh-cn" : set_locale = zh_cn; break;
+        case "en" : set_locale = en; break;
+    }
+    debugger;
+    
+    browser.storage.sync.set({
+        locale : document.querySelector("#locale").value
+    });
+    e.preventDefault();
+});
+// document.querySelector("#default_format").addEventListener( "change" , default_change );
+
+function onGot(item) { console.log(item); }
+function onError(error) { console.log(`Error: ${error}`); }
+
+var gettingItem = browser.storage.local.get();
+gettingItem.then(onGot, onError);
+*/
+        </script>
+    </body>
+</html>

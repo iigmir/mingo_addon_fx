@@ -5,7 +5,7 @@ document.querySelector('#year_calc').addEventListener("click", (e) => {
     };
     var mingo_year = 1911;
     var year_result = 0;
-    console.log(year_ipt);
+    
     if ( isNaN( year_ipt.type ) === true )
     {
         document.querySelector("#year_inputed").innerText = "Invaild input!";
@@ -25,7 +25,7 @@ document.querySelector('#year_calc').addEventListener("click", (e) => {
         }
         else
         {
-            console.log( year_ipt.unit );
+            // console.log( year_ipt.unit );
             document.querySelector("#year_result").innerText = "Error!";
         }
     }
