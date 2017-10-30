@@ -2,6 +2,7 @@
     "name": "__MSG_extensionName__",
     "description": "__MSG_extensionDescription__",
     "default_locale": "zh_TW",
+    "author": "iigmir",
     "icons": {
         "48": "icons/kmt.svg"
     },
