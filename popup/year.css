@@ -14,3 +14,11 @@ body > * {
 #year_type {
   width:235px;
 }
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}

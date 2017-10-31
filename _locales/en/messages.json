@@ -32,11 +32,11 @@
         "description": "none."
     },
     "result_inputed" : {
-        "message": "Invaild input!",
+        "message": "Year input: $year_inputed$",
         "description": "none."
     },
     "result_outputed" : {
-        "message": "Invaild input!",
+        "message": "Year output: $year_outputed$",
         "description": "none."
     }
 }
