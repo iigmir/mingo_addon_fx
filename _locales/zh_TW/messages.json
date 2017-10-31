@@ -3,9 +3,40 @@
         "message": "民國西元換算器",
         "description": "Name of the extension."
     },
-  
     "extDesc": {
         "message": "在民國與西元年份間互換",
         "description": "Description of the extension."
+    },
+    "popup_msg_m2g": {
+        "message": "民國換算為西元",
+        "description": "none."
+    },
+    "popup_msg_g2m": {
+        "message": "西元換算為民國",
+        "description": "none."
+    },
+    "popup_msg_clac": {
+        "message": "年份轉換！",
+        "description": "none."
+    },
+    "option_msg_name": {
+        "message": "預設轉換格式",
+        "description": "none."
+    },
+    "error_msg_invalid_input" : {
+        "message": "輸入數值無效！",
+        "description": "NaN."
+    },
+    "error_msg_invalid_other" : {
+        "message": "不明錯誤",
+        "description": "Check debug console."
+    },
+    "result_inputed" : {
+        "message": "你所輸入的年份：$year_inputed$",
+        "description": "none."
+    },
+    "result_outputed" : {
+        "message": "換算出來的年份：$year_outputed$",
+        "description": "none."
     }
 }

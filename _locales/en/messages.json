@@ -3,9 +3,40 @@
         "message": "Mingo year conventor",
         "description": "Name of the extension."
     },
-
     "extDesc": {
         "message": "Change Mingo/Gregorian year to Gregorian/Mingo year by select bar.",
         "description": "Description of the extension."
+    },
+    "popup_msg_m2g": {
+        "message": "Minguo year to Gregorian year",
+        "description": "none."
+    },
+    "popup_msg_g2m": {
+        "message": "Gregorian year to Minguo year",
+        "description": "none."
+    },
+    "popup_msg_clac": {
+        "message": "Convert year!",
+        "description": "none."
+    },
+    "option_msg_name": {
+        "message": "Default convert format",
+        "description": "none."
+    },
+    "error_msg_invalid_input" : {
+        "message": "Invaild input!",
+        "description": "none."
+    },
+    "error_msg_invalid_other" : {
+        "message": "Unknown error",
+        "description": "none."
+    },
+    "result_inputed" : {
+        "message": "Invaild input!",
+        "description": "none."
+    },
+    "result_outputed" : {
+        "message": "Invaild input!",
+        "description": "none."
     }
 }
