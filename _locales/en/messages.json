@@ -1,12 +1,11 @@
 {
-    "extensionName": {
+    "extName": {
         "message": "Mingo year conventor",
         "description": "Name of the extension."
     },
 
-    "extensionDescription": {
+    "extDesc": {
         "message": "Change Mingo/Gregorian year to Gregorian/Mingo year by select bar.",
         "description": "Description of the extension."
     }
-
 }

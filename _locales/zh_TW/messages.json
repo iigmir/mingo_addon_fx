@@ -1,11 +1,11 @@
 {
-    "extensionName": {
+    "extName": {
         "message": "民國西元換算器",
         "description": "Name of the extension."
     },
   
-    "extensionDescription": {
+    "extDesc": {
         "message": "在民國與西元年份間互換",
         "description": "Description of the extension."
-    },
-  }
+    }
+}
