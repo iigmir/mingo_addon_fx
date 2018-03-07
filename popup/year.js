@@ -45,20 +45,24 @@ function year_automatic_transfer()
     {
         var yat_is_it_grego = yat_input_year > 500;
         var yat_unit;
+        var counter_yat_unit;
         var yat_result;
         if( yat_is_it_grego )
         {
-            yat_unit ="西元";
+            yat_unit = "西元";
+            counter_yat_unit = "民國";
             yat_result = yat_input_year - mingo_year;
         }
         else
         {
             yat_unit = "民國";
+            counter_yat_unit = "西元";
             yat_result = yat_input_year + mingo_year;
         }
         console.log(yat_input_year);
         document.querySelector("#yat_input").innerText =  yat_input_year;
-        document.querySelector("#yat_unit").innerText = yat_unit;
+        document.querySelector("#yat_unit").innerText =  yat_unit;
+        document.querySelector("#counter_yat_unit").innerText =  counter_yat_unit;
         document.querySelector("#yat_result").innerText = yat_result;
     }
     return;
@@ -83,10 +87,8 @@ function year_manual_transfer()
 
 function keypress_behaviour(event)
 {
-    console.log(event);
     if ( event.keyCode === 13 )
     {   // if enter pressed
-        console.log("Enter");
         document.querySelector("#ymt").hidden ? year_automatic_transfer() : year_manual_transfer();
     }
     return;
