@@ -5,7 +5,7 @@ function non_nan_detect( nd_input , result_shown_dom )
 {
     var nd_invaild_message = "輸入無效";
     if ( isNaN( nd_input ) )
-    {
+    {   // Show invaild message.
         document.querySelector( result_shown_dom ).innerText = nd_invaild_message;
         return false;
     }
@@ -14,8 +14,27 @@ function non_nan_detect( nd_input , result_shown_dom )
 
 document.querySelector('#yat_calc').addEventListener("click", (e) => {
     var yat_input_year = parseInt( document.querySelector("#yat_type").value , 10 );
-    // non_nan_detect( yat_input_year , yat_result );
-    console.log(yat_input_year);
+    var yat_vaild = non_nan_detect( yat_input_year , "#yat_result" );
+    if( yat_vaild )
+    {
+        var yat_is_it_grego = yat_input_year > 500;
+        var yat_unit;
+        var yat_result;
+        if( yat_is_it_grego )
+        {
+            yat_unit ="西元";
+            yat_result = yat_input_year - mingo_year;
+        }
+        else
+        {
+            yat_unit = "民國";
+            yat_result = yat_input_year + mingo_year;
+        }
+        console.log(yat_input_year);
+        document.querySelector("#yat_input").innerText =  yat_input_year;
+        document.querySelector("#yat_unit").innerText = yat_unit;
+        document.querySelector("#yat_result").innerText = yat_result;
+    }
 });
 
 document.querySelector('#ymt_calc').addEventListener("click", (e) => {
