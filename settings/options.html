@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+        .hide{ display: none; }
+        .success{ color: blue; }
+        .error{ color: red;font-weight: 500; }
+    </style>
+</head>
+<body>
+    <p>
+        你可以選擇彈出選單要使用那一種轉換模式：<br />
+        自動轉換會在你輸入超過 <code>500</code> 的年份時，自動由西元紀元轉換為民國紀元，反之則自動由民國紀元轉換為西元紀元。<br />
+        你也可以選擇手動轉換紀元年份。
+    </p>
+    <p id="update_status">
+        <span class="hide success">儲存成功！</span>
+        <span class="hide error">儲存失敗！</span>
+    </p>
+    <form id="year_transfer">
+        <label>
+            <input type="radio" id="year_transfer_at" name="year_transfer" value="at" checked />
+            自動轉換
+        </label>
+        <label>
+            <input type="radio" id="year_transfer_mt" name="year_transfer" value="mt" />
+            手動轉換
+        </label>
+        <button type="submit">儲存</button>
+    </form>
+    <script src="action.js"></script>
+</body>
+</html>
